@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "778419513473",
+    "project_id": "auht-set-up-exercise",
+    "storage_bucket": "auht-set-up-exercise.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778419513473:android:6b61ea3834bfe9f6b8c580",
+        "android_client_info": {
+          "package_name": "com.example.auth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOWx0sGQlCOvm2qpVPNDp49uv0QY8pE_o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -4,20 +4,23 @@ import com.google.firebase.Firebase
 import com.google.firebase.auth.auth
 
 class AccountService {
-    fun authenticate(email: String, password: String, onResult: () -> Unit) {
+    fun authenticate(email: String, password: String, onResult: () -> Unit, onFailure: () -> Unit) {
         Firebase.auth.createUserWithEmailAndPassword(email, password)
             .addOnSuccessListener {
                 onResult()
             }
             .addOnFailureListener {
-                /* TODO */
+                onFailure()
             }
     }
 
-    fun login(email: String, password: String, onResult: () -> Unit) {
+    fun login(email: String, password: String, onResult: () -> Unit, onFailure: () -> Unit) {
         Firebase.auth.signInWithEmailAndPassword(email, password)
             .addOnSuccessListener {
-                /*TODO*/
+                onResult()
+            }
+            .addOnFailureListener {
+                onFailure()
             }
     }
 }
